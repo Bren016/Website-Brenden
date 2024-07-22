@@ -4,7 +4,7 @@ const menuLinks = document.querySelector('.navbar__menu')
 var tabLinks = document.getElementsByClassName("tab-links");
 var tabContents = document.getElementsByClassName("tab-contents");
 var tabImages = {
-    'skills'    : 'images/coaching2.jpg',
+    'skills'    : 'images/coaching2.JPG',
     'experience': 'images/laurentide.jpg',
     'education' : 'images/hikeOakcrop.jpg'
 }
