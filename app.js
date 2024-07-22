@@ -29,3 +29,7 @@ function opentab(tabname) {
 
     document.getElementById('about__img').src = tabImages[tabname]
 }
+window.onload = function() {
+    document.getElementById('about__img').src = tabImages['skills']
+    
+}
