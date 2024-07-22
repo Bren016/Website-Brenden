@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brenden Trudeau</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/11dd1fde48.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar"> 
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo">Brenden Trudeau</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="#home" class="navbar__links">
+                        Home
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#about" class="navbar__links">
+                        About
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#portfolio" class="navbar__links">
+                        Portfolio
+                    </a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="#contact" class="button">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home -->
+     <div id="home">
+     <div class="main">
+        <div class="main__container">
+            <div class="main__content">
+                <h1>Hi, I'm</h1>
+                <h2>Brenden</h2>
+            <!--
+                <p>See what makes us different.</p>
+                <button class="main__btn"><a href="/">Get Started</a></button>
+            -->
+            </div>
+            <div class="main__img--container">
+                <img src="images/headshot.JPG" alt="headshot" id="main__img">
+            </div>
+        </div>
+     </div>
+    </div>
+
+     <!-- About -->
+    <div id="about">
+      <div class="about-container">
+        <div class="about-row">
+            <div class="about-col1">
+                <img src="images/coaching2.JPG" alt="default" id="about__img">
+            </div>
+            <div class="about-col2">
+                <h1>About Me</h1>
+                <p>I'm a third-year BSc Software Engineering student at McGill University. Prior to following my passion for Computer Science, I completed 2 years of Mechanical Engineering. I have developed a keen interest in game development and I am also a member of GameDev McGill.<br><br> In addition, I've been an alpine ski coach at the Club de ski mont-Orford (CSMO) for 5 years and I am currently the U16 lead coach.
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming Languages</span><br>Python, Java, Bash, C/C++</li>
+                        <li><span>Game Engines and Modeling</span><br>Unreal Engine 5, Blender</li>
+                        <li><span>Web Development</span><br>Basic knowledge of web development<br> using HTML, CSS, and JavaScript</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2019 - Present</span><br>Alpine Racing Ski Coach at CSMO</li>
+                        <li><span>Summer 2022, 4-month internship</span><br>Assistant Valve Technician at Laurentide Controls</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2020 - 2025</span><br>BSc Software Engineering, McGill University</li>
+                        <li><span>2018 - 2020</span><br>DEC Pure and Applied Sciences, Marianopolis College</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio -->
+     <div id="portfolio">
+        <div class="portfolio-container">
+            <h1>My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/shutTheBox.jpg" alt="project1">
+                    <div class="layer">
+                        <h3>Shut the Box</h3>
+                        <p>Created the popular chance game using Python and Blender. Available to download on itch.io or follow link to source code on Github.</p>
+                        <a href="https://github.com/Bren016/closeTheBox"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <p>More coming soon!</p>
+                <!--
+                <div class="work">
+                    <img src="images/image2.jpg" alt="project2">
+                    <div class="layer">
+                        <h3>Shut the Box</h3>
+                        <p>Created the popular chance game using Python and Blender. Available to download on itch.io or follow link to source code on Github.</p>
+                        <a href="https://github.com/Bren016/closeTheBox"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/hikeOak.jpg" alt="project3">
+                    <div class="layer">
+                        <h3>Shut the Box</h3>
+                        <p>Created the popular chance game using Python and Blender. Available to download on itch.io or follow link to source code on Github.</p>
+                        <a href="https://github.com/Bren016/closeTheBox"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                -->
+            </div>
+        </div>
+     </div>
+
+     <!-- Contact -->
+      <div id="contact">
+        <div class="contact-container">
+            <div class="contact-row">
+                <div class="contact-left">
+                    <h1>Get In Touch!</h1>
+                    <p> <i class="fa-solid fa-envelope"></i> brendentrud@gmail.com</p>
+                    <p> <i class="fa-solid fa-mobile"></i> (514) 978-0323</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/brenden-trudeau-753aa9266/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Brenden_Trudeau_CV.pdf" download class="btn">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div> 
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Brenden Trudeau. Made by yours truly in HTML, CSS, and JavaScript.</p>
+        </div>
+      </div>
+    
+    <script src="app.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyldCfmujEphf4Z0eJWEMN9UCgUNvCMkoTzi8KMFWHL9fJABKhN7APY8OGevykBmGAgqg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully!" 
+                setTimeout(function() {
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
