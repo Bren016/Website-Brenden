@@ -499,7 +499,7 @@ html,body {
 }
 .work-list {
   display: grid;  
-  grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-gap: 40px;
   margin-top: 50px;
 
@@ -582,6 +582,9 @@ html,body {
         padding: 80px 40px;
 
     }
+    .work-list {
+        grid-template-columns: 1fr;
+    }
 
 }
 /**** Contact *********************************************************************************************************/
@@ -593,7 +596,7 @@ html,body {
     display: flex;
     flex-direction: column;
     height: auto;
-    padding: 90px;
+    padding: 80px;
     width: 100%;
     max-width: 1300px;
     justify-self: center;
@@ -613,11 +616,8 @@ html,body {
 
 }
 .contact-left {
-    flex-basis: 35%;
-
-}
-.contact-right {
-    flex-basis: 60%;
+    flex-basis: 100%;
+    text-align: center;
 
 }
 .contact-left p {
@@ -664,38 +664,6 @@ html,body {
     background: #63c774;
 
 }
-.contact-right form {
-    width: 100%;
-
-}
-form input, form textarea {
-    width: 100%;
-    border: 0;
-    outline: none;
-    background: #657e68;
-    padding: 15px;
-    margin: 15px 0;
-    color: #ebeac3;
-    font-size: 18px;
-    border-radius: 6px;
-
-}
-form input::placeholder, form textarea::placeholder {
-    color: #ebeac3;
-
-}
-form .btn2 {
-    padding: 14px 60px;
-    font-size: 18px;
-    margin-top: 20px;
-    cursor: pointer;
-
-}
-#msg {
-    margin-top: -40px;
-    display: block;
-
-}
 .copyright {
     color: #ebeac3;
     width: 100%;
@@ -710,7 +678,7 @@ form .btn2 {
     .contact-container {
         padding: 80px 40px;
     }
-    .contact-left, .contact-right {
+    .contact-left {
         flex-basis: 100%;
     }
 
